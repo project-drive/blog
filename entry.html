@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <h1 style="text-align: center" >LOGIN PAGE</h1>
+        <br>
+        <br>
+        <hr>
+        <img src="img/images.png" class="img">
+       <style>
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        img
+        {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            width: 20%;
+            border-radius: 50%;
+        }
+       </style>
+
+        <title>FORM</title>
+        <script type="text/javascript">
+            function f1()
+            {
+                x=document.frm1.user.value;
+                y=document.frm1.pass.value;
+                if((x == "admin") && (y == "adm!nistr@t0r"))
+                {
+                    window.location.href = "http://www.nmimsblog2019.appspot.com";
+                }
+                else
+                {
+                    alert("YOUR NAME IS " + document.frm1.user.value + "YOUR PASS. IS "+document.frm1.pass.value + "please enter correct pass");
+                }
+           }
+        </script>
+
+    </head>
+    <body>
+        <form name="frm1">
+            username: <input type="text" name="user">
+            <br>
+            password: <input type="password" name="pass">
+            <br>
+            <input type="button" name="" value="login" onclick="f1()">
+
+        </form>
+    </body>
+
+
+
+</html>
